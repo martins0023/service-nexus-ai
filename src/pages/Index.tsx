@@ -1,11 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { Button } from "@/components/ui/button";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    // Automatically redirect to services page
+    navigate("/services");
+  }, [navigate]);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen flex items-center justify-center bg-background p-4">
+      <div className="text-center space-y-6">
+        <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          ServiceNexus AI
+        </h1>
+        <p className="text-xl text-muted-foreground">
+          Connect with top services and vendors
+        </p>
+        <div className="flex gap-4 justify-center">
+          <Button 
+            onClick={() => navigate("/services")} 
+            className="bg-gradient-to-r from-primary to-secondary hover:opacity-90"
+          >
+            Explore Services
+          </Button>
+          <Button 
+            variant="outline" 
+            onClick={() => navigate("/chats")}
+          >
+            View Messages
+          </Button>
+        </div>
       </div>
     </div>
   );
