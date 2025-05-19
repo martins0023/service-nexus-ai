@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import MainLayout from '@/components/layouts/MainLayout';
@@ -46,7 +45,7 @@ const generateMockMessages = (chatId: string): Message[] => {
   const messages: Message[] = [
     {
       id: '1',
-      content: 'Hello! I saw your profile and I'm interested in your services.',
+      content: "Hello! I saw your profile and I'm interested in your services.",
       senderId: currentUserId,
       receiverId: otherUserId,
       timestamp: new Date(Date.now() - 60 * 60000), // 60 minutes ago
@@ -54,7 +53,7 @@ const generateMockMessages = (chatId: string): Message[] => {
     },
     {
       id: '2',
-      content: 'Hi there! Thanks for reaching out. I'd be happy to help with your project.',
+      content: "Hi there! Thanks for reaching out. I'd be happy to help with your project.",
       senderId: otherUserId,
       receiverId: currentUserId,
       timestamp: new Date(Date.now() - 55 * 60000), // 55 minutes ago
@@ -62,7 +61,7 @@ const generateMockMessages = (chatId: string): Message[] => {
     },
     {
       id: '3',
-      content: 'Could you tell me more about what you need?',
+      content: "Could you tell me more about what you need?",
       senderId: otherUserId,
       receiverId: currentUserId,
       timestamp: new Date(Date.now() - 54 * 60000), // 54 minutes ago
@@ -70,7 +69,7 @@ const generateMockMessages = (chatId: string): Message[] => {
     },
     {
       id: '4',
-      content: 'I need help with a project that requires your expertise. Here are some details:',
+      content: "I need help with a project that requires your expertise. Here are some details:",
       senderId: currentUserId,
       receiverId: otherUserId,
       timestamp: new Date(Date.now() - 50 * 60000), // 50 minutes ago
@@ -78,7 +77,7 @@ const generateMockMessages = (chatId: string): Message[] => {
     },
     {
       id: '5',
-      content: 'I need it completed within 2 weeks. Is that possible?',
+      content: "I need it completed within 2 weeks. Is that possible?",
       senderId: currentUserId,
       receiverId: otherUserId,
       timestamp: new Date(Date.now() - 49 * 60000), // 49 minutes ago
@@ -86,7 +85,7 @@ const generateMockMessages = (chatId: string): Message[] => {
     },
     {
       id: '6',
-      content: 'Yes, that timeline works for me. I can start right away.',
+      content: "Yes, that timeline works for me. I can start right away.",
       senderId: otherUserId,
       receiverId: currentUserId,
       timestamp: new Date(Date.now() - 45 * 60000), // 45 minutes ago
@@ -94,7 +93,7 @@ const generateMockMessages = (chatId: string): Message[] => {
     },
     {
       id: '7',
-      content: 'Here's an example of my previous work:',
+      content: "Here's an example of my previous work:",
       senderId: otherUserId,
       receiverId: currentUserId,
       timestamp: new Date(Date.now() - 44 * 60000), // 44 minutes ago
@@ -108,7 +107,7 @@ const generateMockMessages = (chatId: string): Message[] => {
     },
     {
       id: '8',
-      content: 'That looks great! How much would you charge for this project?',
+      content: "That looks great! How much would you charge for this project?",
       senderId: currentUserId,
       receiverId: otherUserId,
       timestamp: new Date(Date.now() - 40 * 60000), // 40 minutes ago
@@ -116,7 +115,7 @@ const generateMockMessages = (chatId: string): Message[] => {
     },
     {
       id: '9',
-      content: 'Based on your requirements, I would charge $500 for the complete project.',
+      content: "Based on your requirements, I would charge $500 for the complete project.",
       senderId: otherUserId,
       receiverId: currentUserId,
       timestamp: new Date(Date.now() - 30 * 60000), // 30 minutes ago
@@ -124,7 +123,7 @@ const generateMockMessages = (chatId: string): Message[] => {
     },
     {
       id: '10',
-      content: 'That works for me. Let's proceed!',
+      content: "That works for me. Let's proceed!",
       senderId: currentUserId,
       receiverId: otherUserId,
       timestamp: new Date(Date.now() - 25 * 60000), // 25 minutes ago

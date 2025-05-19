@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import MainLayout from '@/components/layouts/MainLayout';
@@ -66,7 +65,7 @@ const mockChats: ChatPreview[] = [
     id: '5',
     name: 'Alexandra Wright',
     avatar: 'https://randomuser.me/api/portraits/women/23.jpg',
-    lastMessage: 'I've reviewed your business plan and have some feedback.',
+    lastMessage: "I've reviewed your business plan and have some feedback.",
     timestamp: new Date(Date.now() - 4 * 86400000), // 4 days ago
     unreadCount: 0,
     isRead: true,

@@ -52,7 +52,7 @@ const ProfilePage = () => {
           >
             Settings
           </TabsTrigger>
-        </Tabs>
+        </TabsList>
         
         <TabsContent value="account" className="m-0">
           <div className="p-4 space-y-4">
