@@ -15,7 +15,7 @@ const Index = () => {
     <div className="min-h-screen flex items-center justify-center bg-background p-4">
       <div className="text-center space-y-6">
         <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-          ServiceNexus AI
+          Project Ace
         </h1>
         <p className="text-xl text-muted-foreground">
           Connect with top services and vendors

@@ -19,6 +19,13 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'monument': ['"Monument Extended"', 'sans-serif'],
+				'poppins': ['Poppins', 'sans-serif'],
+				'host-grotesk': ['"Host Grotesk"', 'sans-serif'],
+				'montserrat': ['"Montserrat"', 'Poppins'],
+				'montserrat-alternates': ['"Montserrat Alternates"', 'Poppins'],
+			  },
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -70,6 +77,8 @@ export default {
 					blue: '#0EA5E9',
 					softGray: '#F1F0FB',
 					darkText: '#1A1F2C',
+					primary: "#040C11",
+        			secondary: "#2356D3",
 				}
 			},
 			borderRadius: {

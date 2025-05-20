@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Defining Monument Extended font */
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('/fonts/MonumentExtended-Regular.otf') format('woff2'),
+       url('/fonts/MonumentExtended-Ultrabold.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @tailwind base;
 @tailwind components;
@@ -43,6 +56,8 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    font-family: 'Montserrat', "Montserrat Alternates", 'Monument Extended', 'Poppins', 'Host Grotesk', sans-serif;
   }
 
   .dark {
@@ -55,7 +70,7 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 263 84% 63%;
+    --primary: 203.06 61.89% 48.24%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 292 84% 61%;
